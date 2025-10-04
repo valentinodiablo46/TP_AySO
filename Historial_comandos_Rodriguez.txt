@@ -1,0 +1,62 @@
+pwd
+ls -l
+cd repogit
+git clone git@github.com:valentinodiablo46/TP_AySO.git
+ls -l
+cd TP_AySO
+exit
+cd repogit
+$ ssh-keygen -t ed25519
+ssh-keygen -t ed25519 -C "valentinodiablo123@gmail.com"
+git clone git@github.com:valentinodiablo46/TP_AySO.git
+ls -l
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+ssh -T git@github.com
+ssh-add -l
+cat ~/.ssh/id_ed25519.pub
+cd ~/repogit
+git clone git@github.com:valentinodiablo46/TP_AySO.git
+ls -l
+cd TP_AySO/
+pwd
+ls -l
+git pull origin main
+ls -l
+cat /etc/mtab
+man grep
+grep SYSFS /etc/mtab
+grep home_url /etc/os-release
+grep -i Sysfs /etc/mtab
+grep -i Sysfs /etc/mtab > datos_sys.txt
+ls -l
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls -l
+git add .
+git config --global user.email "valentinodiablo123@gmail.com"
+git confi --global user.name "valentinodiablo46"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git config --global user.name "valentinodiablo46"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "vagrant" /etc/passwd | awk -F: '{print $5, $6}' >> datos_usuario.txt
+cat datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información del Usuario"
+git push origin main
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p ~/TP1/{arquitectura,so}/{Clase1,Clase2,Clase3,Clase4,Clase5,Clase6}
+tree
+sudo snap install tree
+tree
+tree ~/TP1
+vim script2.sh
+rm script2.sh
+vim script_dir.sh
+ls -l
+chmod 764 script_dir.sh
+history -a
